@@ -1,0 +1,117 @@
+//Variables
+{var tx=450;
+var ty=450;
+var points=0;
+var hits=0;
+var s=0;
+var time=0;
+var start=0;}
+
+function setup() {
+  createCanvas(1350,650);
+}
+
+//"Shooting"
+function mouseClicked() {
+    if (mouseX>tx && mouseX<tx+100 && mouseY>ty && mouseY<ty+100) {
+      hits=hits+1;
+      points=points+1;
+    }
+    if (mouseX>tx+13 && mouseX<tx+86 && mouseY>ty+13 && mouseY<ty+86) {
+      points=points+4;
+    }
+    if (mouseX>tx+25 && mouseX<tx+74 && mouseY>ty+25 && mouseY<ty+74) {
+      points=points+5;
+    }
+    if (mouseX>tx+38 && mouseX<tx+63 && mouseY>ty+38 && mouseY<ty+63) {
+      points=points+5;
+    }
+    
+    start = 1;
+}
+
+
+function draw() {
+  background(0,128,255);
+  strokeWeight(1)
+  noStroke()
+
+  //Counter
+  {fill(0);
+  noStroke();
+  textFont("Veranda");
+  textSize(20);
+  text("Points = ",130,50);
+  text(points,200,50);
+  text("Hits = ",450,50);
+  text(hits,520,50);}
+  
+  //Target
+  {noStroke();
+  fill(212,0,0);
+  rect(tx,ty,100,100);
+  fill(255);
+  rect(tx+13,ty+13,75,75);
+  fill(212,0,0);
+  rect(tx+25,ty+25,50,50);
+  fill(255);
+  rect(tx+38,ty+38,25,25);
+  fill(212,0,0);
+  rect(tx+48,ty+48,5,5);}
+
+  //Target Movement
+  {s=s+1
+  if (s>=50) {
+    tx=random(0,1250);
+    ty=random(100,550);
+    s=0;
+  }}
+  
+  //Game Over
+  {time=time+1
+  if (time>=800) {
+    background(0,128,255);
+    textFont("Veranda");
+    textSize(80);
+    fill(255,0,0);
+    stroke(255,0,0);
+    text("Game Over",500,325);
+    textSize(50);
+    text("Your Score Was ",450,450);
+    text(points,820,450);
+    text("With ",550,550);
+    text(hits,675,550);
+    
+    if (hits == 1) {
+      text("Hit",750,550);
+    } else {
+      text("Hits",750,550);
+    }
+  }}
+  
+  //Start Screen
+  {if (start === 0) {
+    background(0,128,255);
+    textFont("Veranda");
+    textSize(80);
+    fill(255,0,0);
+    stroke(255,0,0);
+    text("Target Practice",400,325);
+    textSize(30);
+    text("Shoot the targets as they pop up. The closer to the bullseye you are, the more points you get.",120,400);
+    textSize(50);
+    text("Click To Start",500,500);
+    time=0;
+  }}
+  
+  //Cursor
+  {noFill();
+  stroke(255,0,0);
+  noCursor();
+  rect(mouseX-10,mouseY-10,20,20);
+  rect(mouseX-1,mouseY-1,2,2);
+  line(mouseX,mouseY+6,mouseX,mouseY+15);
+  line(mouseX,mouseY-6,mouseX,mouseY-15);
+  line(mouseX+6,mouseY,mouseX+15,mouseY);
+  line(mouseX-6,mouseY,mouseX-15,mouseY);}
+}
