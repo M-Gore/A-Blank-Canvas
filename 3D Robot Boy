@@ -1,0 +1,41 @@
+function setup() {
+  createCanvas(windowWidth,windowHeight,WEBGL);
+}
+
+function draw() {
+  background(50);
+  orbitControl();
+  translate(0,0,0);
+  fill(100);
+  box(60,80,40);
+  fill(0);
+  translate(40,-20,0);
+  sphere(20);
+  translate(-80,0,0);
+  sphere(20);
+  fill(200)
+  translate(-5,30,0);
+  cylinder(10,50);
+  translate(90,0,0);
+  cylinder(10,50);
+  translate(-45,-40,0);
+  cylinder(10,50);
+  fill(100);
+  translate(0,-55,0);
+  sphere(40,40);
+  fill(0);
+  translate(25,10,30);
+  sphere(5,5);
+  translate(-50,0,0);
+  sphere(5,5);
+  translate(25,125,-30);
+  fill(0);
+  box(60,20,40);
+  translate(0,20,0);
+  box(10,20,40);
+  translate(15,0,0);
+  fill(200);
+  cylinder(10,75);
+  translate(-30,0,0);
+  cylinder(10,75);
+}
