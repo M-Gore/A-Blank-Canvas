@@ -1,0 +1,430 @@
+function mousePressed() {
+  fullscreen(1);
+}
+
+//Initial positions for clouds
+var a = 25;
+var b = 125;
+var c = 225;
+var d = 325;
+var e = 425;
+var f = 525;
+var g = 625;
+var h = 725;
+var i = 825;
+var j = 925;
+var k = 1025;
+var l = 1125;
+var m = 1225;
+var n = 1325;
+
+//Initial Position for raindrops
+var r1y = 60;
+var r2y = 60;
+var r3y = 60;
+var r4y = 60;
+var r5y = 60;
+var r6y = 60;
+var r7y = 60;
+var r8y = 60;
+var r9y = 60;
+var r10y = 60;
+var r11y = 60;
+var r12y = 60;
+var r13y = 60;
+var r14y = 60;
+
+//Speed of raindrops
+var speed = 70;
+
+//Canvas size and cursor
+function setup() { 
+   fullscreen(1);
+  createCanvas(1350,650);
+  cursor(CROSS,mouseX,mouseY);
+}
+
+function draw() {
+  //Clouds
+  background(34,93,112);
+  noStroke();
+  fill(28,128,126);
+  ellipse(a,20,150,70);
+  ellipse(b,20,150,70);
+  ellipse(c,20,150,70);
+  ellipse(d,20,150,70);
+  ellipse(e,20,150,70);
+  ellipse(f,20,150,70);
+  ellipse(g,20,150,70);
+  ellipse(h,20,150,70);
+  ellipse(i,20,150,70);
+  ellipse(j,20,150,70);
+  ellipse(k,20,150,70);
+  ellipse(l,20,150,70);
+  ellipse(m,20,150,70);
+  ellipse(n,20,150,70);
+  //Moving right
+  a=a+1;
+  b=b+1;
+  c=c+1;
+  d=d+1;
+  e=e+1;
+  f=f+1;
+  g=g+1;
+  h=h+1;
+  i=i+1;
+  j=j+1;
+  k=k+1;
+  l=l+1;
+  m=m+1;
+  n=n+1;
+  //Resetting position of each cloud
+  if (a>1350) {a=25}
+  if (b>1350) {b=25}
+  if (c>1350) {c=25}
+  if (d>1350) {d=25}
+  if (e>1350) {e=25}
+  if (f>1350) {f=25}
+  if (g>1350) {g=25}
+  if (h>1350) {h=25}
+  if (i>1350) {i=25}
+  if (j>1350) {j=25}
+  if (k>1350) {k=25}
+  if (l>1350) {l=25}
+  if (m>1350) {m=25}
+  if (n>1350) {n=25}
+  rect(0,0,1350,45);
+  
+  //Raindrops
+  fill(7,166,219);
+  ellipse(random(0,26),r1y,10,20);
+  ellipse(random(26,126),r2y,10,20);
+  ellipse(random(126,226),r3y,10,20);
+  ellipse(random(226,326),r4y,10,20);
+  ellipse(random(326,426),r5y,10,20);
+  ellipse(random(426,526),r6y,10,20);
+  ellipse(random(526,626),r7y,10,20);
+  ellipse(random(626,726),r8y,10,20);
+  ellipse(random(726,826),r9y,10,20);
+  ellipse(random(826,926),r10y,10,20);
+  ellipse(random(926,1026),r11y,10,20);
+  ellipse(random(1026,1126),r12y,10,20);
+  ellipse(random(1126,1226),r13y,10,20);
+  ellipse(random(1226,1326),r14y,10,20);
+  //Moving downwards
+  r1y = r1y+speed;
+  r2y = r2y+speed;
+  r3y = r3y+speed;
+  r4y = r4y+speed;
+  r5y = r5y+speed;
+  r6y = r6y+speed;
+  r7y = r7y+speed;
+  r8y = r8y+speed;
+  r9y = r9y+speed;
+  r10y = r10y+speed;function mousePressed() {
+  fullscreen(1);
+}
+
+//Initial positions for clouds
+var a = 25;
+var b = 125;
+var c = 225;
+var d = 325;
+var e = 425;
+var f = 525;
+var g = 625;
+var h = 725;
+var i = 825;
+var j = 925;
+var k = 1025;
+var l = 1125;
+var m = 1225;
+var n = 1325;
+
+//Initial Position for raindrops
+var r1y = 60;
+var r2y = 60;
+var r3y = 60;
+var r4y = 60;
+var r5y = 60;
+var r6y = 60;
+var r7y = 60;
+var r8y = 60;
+var r9y = 60;
+var r10y = 60;
+var r11y = 60;
+var r12y = 60;
+var r13y = 60;
+var r14y = 60;
+
+//Speed of raindrops
+var speed = 70;
+
+//Canvas size and cursor
+function setup() { 
+   fullscreen(1);
+  createCanvas(1350,650);function mousePressed() {
+  fullscreen(1);
+}
+
+//Initial positions for clouds
+var a = 25;
+var b = 125;
+var c = 225;
+var d = 325;
+var e = 425;
+var f = 525;
+var g = 625;
+var h = 725;
+var i = 825;
+var j = 925;
+var k = 1025;
+var l = 1125;
+var m = 1225;
+var n = 1325;
+
+//Initial Position for raindrops
+var r1y = 60;
+var r2y = 60;
+var r3y = 60;
+var r4y = 60;
+var r5y = 60;
+var r6y = 60;
+var r7y = 60;
+var r8y = 60;
+var r9y = 60;
+var r10y = 60;
+var r11y = 60;
+var r12y = 60;
+var r13y = 60;
+var r14y = 60;
+
+//Speed of raindrops
+var speed = 70;
+
+//Canvas size and cursor
+function setup() { 
+   fullscreen(1);
+  createCanvas(1350,650);
+  cursor(CROSS,mouseX,mouseY);
+}
+
+function draw() {
+  //Clouds
+  background(34,93,112);
+  noStroke();
+  fill(28,128,126);
+  ellipse(a,20,150,70);
+  ellipse(b,20,150,70);
+  ellipse(c,20,150,70);
+  ellipse(d,20,150,70);
+  ellipse(e,20,150,70);
+  ellipse(f,20,150,70);
+  ellipse(g,20,150,70);
+  ellipse(h,20,150,70);
+  ellipse(i,20,150,70);
+  ellipse(j,20,150,70);
+  ellipse(k,20,150,70);
+  ellipse(l,20,150,70);
+  ellipse(m,20,150,70);
+  ellipse(n,20,150,70);
+  //Moving right
+  a=a+1;
+  b=b+1;
+  c=c+1;
+  d=d+1;
+  e=e+1;
+  f=f+1;
+  g=g+1;
+  h=h+1;
+  i=i+1;
+  j=j+1;
+  k=k+1;
+  l=l+1;
+  m=m+1;
+  n=n+1;
+  //Resetting position of each cloud
+  if (a>1350) {a=25}
+  if (b>1350) {b=25}
+  if (c>1350) {c=25}
+  if (d>1350) {d=25}
+  if (e>1350) {e=25}
+  if (f>1350) {f=25}
+  if (g>1350) {g=25}
+  if (h>1350) {h=25}
+  if (i>1350) {i=25}
+  if (j>1350) {j=25}
+  if (k>1350) {k=25}
+  if (l>1350) {l=25}
+  if (m>1350) {m=25}
+  if (n>1350) {n=25}
+  rect(0,0,1350,45);
+  
+  //Raindrops
+  fill(7,166,219);
+  ellipse(random(0,26),r1y,10,20);
+  ellipse(random(26,126),r2y,10,20);
+  ellipse(random(126,226),r3y,10,20);
+  ellipse(random(226,326),r4y,10,20);
+  ellipse(random(326,426),r5y,10,20);
+  ellipse(random(426,526),r6y,10,20);
+  ellipse(random(526,626),r7y,10,20);
+  ellipse(random(626,726),r8y,10,20);
+  ellipse(random(726,826),r9y,10,20);
+  ellipse(random(826,926),r10y,10,20);
+  ellipse(random(926,1026),r11y,10,20);
+  ellipse(random(1026,1126),r12y,10,20);
+  ellipse(random(1126,1226),r13y,10,20);
+  ellipse(random(1226,1326),r14y,10,20);
+  //Moving downwards
+  r1y = r1y+speed;
+  r2y = r2y+speed;
+  r3y = r3y+speed;
+  r4y = r4y+speed;
+  r5y = r5y+speed;
+  r6y = r6y+speed;
+  r7y = r7y+speed;
+  r8y = r8y+speed;
+  r9y = r9y+speed;
+  r10y = r10y+speed;
+  r11y = r11y+speed;
+  r12y = r12y+speed;
+  r13y = r13y+speed;
+  r14y = r14y+speed;
+  //Resetting position of each raindrop
+  if (r1y>650) {r1y=60}
+  if (r2y>650) {r2y=60}
+  if (r3y>650) {r3y=60}
+  if (r4y>650) {r4y=60}
+  if (r5y>650) {r5y=60}
+  if (r6y>650) {r6y=60}
+  if (r7y>650) {r7y=60}
+  if (r8y>650) {r8y=60}
+  if (r9y>650) {r9y=60}
+  if (r10y>650) {r10y=60}
+  if (r11y>650) {r11y=60}
+  if (r12y>650) {r12y=60}
+  if (r13y>650) {r13y=60}
+  if (r14y>650) {r14y=60}
+}
+  cursor(CROSS,mouseX,mouseY);
+}
+
+function draw() {
+  //Clouds
+  background(34,93,112);
+  noStroke();
+  fill(28,128,126);
+  ellipse(a,20,150,70);
+  ellipse(b,20,150,70);
+  ellipse(c,20,150,70);
+  ellipse(d,20,150,70);
+  ellipse(e,20,150,70);
+  ellipse(f,20,150,70);
+  ellipse(g,20,150,70);
+  ellipse(h,20,150,70);
+  ellipse(i,20,150,70);
+  ellipse(j,20,150,70);
+  ellipse(k,20,150,70);
+  ellipse(l,20,150,70);
+  ellipse(m,20,150,70);
+  ellipse(n,20,150,70);
+  //Moving right
+  a=a+1;
+  b=b+1;
+  c=c+1;
+  d=d+1;
+  e=e+1;
+  f=f+1;
+  g=g+1;
+  h=h+1;
+  i=i+1;
+  j=j+1;
+  k=k+1;
+  l=l+1;
+  m=m+1;
+  n=n+1;
+  //Resetting position of each cloud
+  if (a>1350) {a=25}
+  if (b>1350) {b=25}
+  if (c>1350) {c=25}
+  if (d>1350) {d=25}
+  if (e>1350) {e=25}
+  if (f>1350) {f=25}
+  if (g>1350) {g=25}
+  if (h>1350) {h=25}
+  if (i>1350) {i=25}
+  if (j>1350) {j=25}
+  if (k>1350) {k=25}
+  if (l>1350) {l=25}
+  if (m>1350) {m=25}
+  if (n>1350) {n=25}
+  rect(0,0,1350,45);
+  
+  //Raindrops
+  fill(7,166,219);
+  ellipse(random(0,26),r1y,10,20);
+  ellipse(random(26,126),r2y,10,20);
+  ellipse(random(126,226),r3y,10,20);
+  ellipse(random(226,326),r4y,10,20);
+  ellipse(random(326,426),r5y,10,20);
+  ellipse(random(426,526),r6y,10,20);
+  ellipse(random(526,626),r7y,10,20);
+  ellipse(random(626,726),r8y,10,20);
+  ellipse(random(726,826),r9y,10,20);
+  ellipse(random(826,926),r10y,10,20);
+  ellipse(random(926,1026),r11y,10,20);
+  ellipse(random(1026,1126),r12y,10,20);
+  ellipse(random(1126,1226),r13y,10,20);
+  ellipse(random(1226,1326),r14y,10,20);
+  //Moving downwards
+  r1y = r1y+speed;
+  r2y = r2y+speed;
+  r3y = r3y+speed;
+  r4y = r4y+speed;
+  r5y = r5y+speed;
+  r6y = r6y+speed;
+  r7y = r7y+speed;
+  r8y = r8y+speed;
+  r9y = r9y+speed;
+  r10y = r10y+speed;
+  r11y = r11y+speed;
+  r12y = r12y+speed;
+  r13y = r13y+speed;
+  r14y = r14y+speed;
+  //Resetting position of each raindrop
+  if (r1y>650) {r1y=60}
+  if (r2y>650) {r2y=60}
+  if (r3y>650) {r3y=60}
+  if (r4y>650) {r4y=60}
+  if (r5y>650) {r5y=60}
+  if (r6y>650) {r6y=60}
+  if (r7y>650) {r7y=60}
+  if (r8y>650) {r8y=60}
+  if (r9y>650) {r9y=60}
+  if (r10y>650) {r10y=60}
+  if (r11y>650) {r11y=60}
+  if (r12y>650) {r12y=60}
+  if (r13y>650) {r13y=60}
+  if (r14y>650) {r14y=60}
+}
+  r11y = r11y+speed;
+  r12y = r12y+speed;
+  r13y = r13y+speed;
+  r14y = r14y+speed;
+  //Resetting position of each raindrop
+  if (r1y>650) {r1y=60}
+  if (r2y>650) {r2y=60}
+  if (r3y>650) {r3y=60}
+  if (r4y>650) {r4y=60}
+  if (r5y>650) {r5y=60}
+  if (r6y>650) {r6y=60}
+  if (r7y>650) {r7y=60}
+  if (r8y>650) {r8y=60}
+  if (r9y>650) {r9y=60}
+  if (r10y>650) {r10y=60}
+  if (r11y>650) {r11y=60}
+  if (r12y>650) {r12y=60}
+  if (r13y>650) {r13y=60}
+  if (r14y>650) {r14y=60}
+}
